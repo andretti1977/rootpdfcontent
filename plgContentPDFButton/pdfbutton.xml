@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>Content - PDF Button</name>
+	<author>Root Progress</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Evan Fillman. All rights reserved.
+	</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt
+	</license>
+	<authorEmail>admin@rootprogress.com</authorEmail>
+	<authorUrl>www.rootprogress.com</authorUrl>
+	<version>0.1</version>
+	<description>Inserts PDF Button into Articles, for use with PDF Content Plugin</description>
+	<files>
+		<filename plugin="pdfbutton">pdfbutton.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+
+	</languages>
+	<config>
+
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="buttonposition" type="list" default="1" label="Button Position"
+					description="">
+					<option value="1">Before Article</option>
+					<option value="2">After Article</option>
+					<option value="3">Before and After Article</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

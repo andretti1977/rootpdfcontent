@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>System - PDF Content</name>
+	<author>Root Progress</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Evan Fillman. All rights reserved.
+	</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt
+	</license>
+	<authorEmail>admin@rootprogress.com</authorEmail>
+	<authorUrl>www.rootprogress.com</authorUrl>
+	<version>0.1</version>
+	<description>Allows Creation of PDF files from Content Atricles</description>
+	<files>
+		<filename plugin="pdfcontent">pdfcontent.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+
+	</languages>
+	<config>
+
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="size" type="list" default="letter" label="PDF Size"
+					description="">
+					<option value="letter">Letter</option>
+					<option value="legal">Legal</option>
+					<option value="A4">A4</option>
+				</field>
+				<field name="orientation" type="list" default="portrait"
+					label="PDF Orientation" description="">
+					<option value="portrait">Portrait</option>
+					<option value="landscape">Landscape</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
